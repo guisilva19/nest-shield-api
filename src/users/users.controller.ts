@@ -12,7 +12,7 @@ export class UsersController {
   }
 
   @Get()
-  find(): { user_id: number; name: string } {
+  find(): any {
     return this.usersService.findUser();
   }
 }
