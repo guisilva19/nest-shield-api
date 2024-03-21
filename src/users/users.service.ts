@@ -11,13 +11,6 @@ export class UsersService {
   }
 
   async findUser() {
-    await this.prisma.user.create({
-      data: {
-        name: 'Guilherme Silva Fernandes',
-        email: '2003silvagui@gmail.com',
-        password: '123456',
-      },
-    });
     return this.prisma.user.findMany();
   }
 }

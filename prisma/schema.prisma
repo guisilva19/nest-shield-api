@@ -10,7 +10,7 @@ generator client {
 
 datasource db {
   provider = "mongodb"
-  url      = "mongodb+srv://gui:admin@db-api.mpmutup.mongodb.net/"
+  url      = "mongodb+srv://gui:admin@db-api.mpmutup.mongodb.net/master?retryWrites=true&w=majority"
 }
 
 model User {
