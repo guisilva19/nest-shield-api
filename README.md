@@ -9,6 +9,7 @@ Esta API é uma demonstração do uso de várias funcionalidades, incluindo o ba
 ## Funcionalidades
 
 - **Integração com MongoDB**: Utiliza MongoDB para armazenamento flexível e escalável de dados.
+- **Integração com ORM Prisma**: Utiliza o Prisma como ORM para uma comunicação eficiente com o banco de dados.
 - **Criptografia de Ponta a Ponta**: Implementa técnicas de criptografia avançadas para proteger senhas.
 - **Autenticação JWT**: Usa Tokens de Web JSON para autenticação de usuário segura.
 - **Treinamento e Demonstração**: Criada especificamente para treinamento e demonstração da implementação dessas funcionalidades.
