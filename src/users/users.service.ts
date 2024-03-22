@@ -22,13 +22,24 @@ export class UsersService {
         ...userBody,
         password: bcrypt.hashSync(userBody.password, 10),
       },
+      select: {
+        id: true,
+        email: true,
+        name: true,
+      },
     });
 
     return userCreated;
   }
 
   async findUser() {
-    return this.prisma.user.findMany();
+    return this.prisma.user.findMany({
+      select: {
+        id: true,
+        email: true,
+        name: true,
+      },
+    });
   }
 
   async findByEmail(email: string) {
