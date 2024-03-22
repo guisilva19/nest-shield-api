@@ -110,7 +110,7 @@ export class UsersService {
 
     if (extraFields.length > 0) {
       throw new HttpException(
-        `Invalid field(s) provided: ${extraFields.join(', ')}`,
+        `Invalid field(s) provided:  ${extraFields.join(', ')}`,
         HttpStatus.BAD_REQUEST,
       );
     }
